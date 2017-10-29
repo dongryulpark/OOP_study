@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_PureVirtualFunctions", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_win32api", "10_win32api\10_win32api.vcxproj", "{FE76E843-EB78-4E92-B751-FD1E7BE3C2B5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_Struct", "00_Struct\00_Struct.vcxproj", "{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{FE76E843-EB78-4E92-B751-FD1E7BE3C2B5}.Release|x64.Build.0 = Release|x64
 		{FE76E843-EB78-4E92-B751-FD1E7BE3C2B5}.Release|x86.ActiveCfg = Release|Win32
 		{FE76E843-EB78-4E92-B751-FD1E7BE3C2B5}.Release|x86.Build.0 = Release|Win32
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Debug|x64.ActiveCfg = Debug|x64
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Debug|x64.Build.0 = Debug|x64
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Debug|x86.ActiveCfg = Debug|Win32
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Debug|x86.Build.0 = Debug|Win32
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Release|x64.ActiveCfg = Release|x64
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Release|x64.Build.0 = Release|x64
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Release|x86.ActiveCfg = Release|Win32
+		{1CDDFC1D-4742-4BF3-985C-3C32260DA7CF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

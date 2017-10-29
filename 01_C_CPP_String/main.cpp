@@ -18,8 +18,7 @@ int main()
 	string combinedCppString = "combine example ";
 	string searchedCppString = "Napster's pay-to-play service is officially out";
 
-	/*example of c style string copy
-	nowadays we must use strcpy_s();*/
+	/*example of c style string copy nowadays we must use strcpy_s();*/
 	strcpy(copyedString, cString);
 	//strcpy_s(copyedString, sizeof(char) * (len + 1),cString);
 
@@ -69,7 +68,7 @@ int main()
 	cppString = cString;
 	cppString[0] = 'B';
 
-	cout << "example of cpp style string substring" << endl;
+	cout << "example of c style string to cpp style string" << endl;
 	cout << "copyed cpp style string = " << cppString << endl;
 	cout << "original c style string = " << cString << "\n\n" << endl;
 
@@ -100,15 +99,15 @@ int main()
 	//while ((getchar()) != ‘\n’); in c
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-	cin.getline(inputedString, 20);
-	cin.clear();
-	getline(cin, inputedCppString);
+	cin.getline(inputedString, 20); // 주의! cin의 메소드를 사용한다.
+	cin.clear();					// 주의! cin의 메소드
+	getline(cin, inputedCppString); // getline안에 Cin이 들어간다.
 	cout << "inputedString = " << inputedString << endl;
 	cout << "inputedCppString = " << inputedCppString << "\n\n" << endl;
 
 
-
-	delete[] copyedString;
+	/*동적할당 사용 규칙 new & delete 쌍이루기*/
+	delete[] copyedString; 
 	delete[] combinedString;
 
 	return 0;

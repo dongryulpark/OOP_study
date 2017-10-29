@@ -6,6 +6,7 @@ int main()
 {
 	//Shape  shape[5];
 	Shape* shape[3] = {NULL, };
+	Rectangle rec;
 
 	shape[0] = new Rectangle(250, 250, 150, 150);
 	shape[1] = new Rectangle(300, 300, 100, 100);
@@ -21,6 +22,7 @@ int main()
 		delete shape[i];
 		shape[i] = NULL;
 	}
+
 
 	return 0;
 }
