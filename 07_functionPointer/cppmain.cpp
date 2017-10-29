@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 
 using namespace std;
 
@@ -40,10 +40,12 @@ int main()
 
 	//FP1 fp1 = &point::setX;
 	FP2 fp2;
-	fp2 = &Point::setX;
-
+	//c++에서 function pointer 사용 시 &을 무조건 붙여줘야 한다.
+	//()으로 의미를 더욱 명확히 하였음
+	fp2 = &(Point::setX);
+	//fp2 = &Point::setX;
 	(pt.*fp2)(100);
 
 	pt.print();
 	return 0;
-}
+}*/

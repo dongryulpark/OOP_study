@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-/*#include <stdio.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -23,7 +23,7 @@ int main()
 	switch (op)
 	{
 	case '+':
-		calc = &plus;
+		calc = plus; // &을 붙여도 or 안붙여도 동작을 한다.
 		break;
 	case '-':
 		calc = &minus;
@@ -66,4 +66,4 @@ int division(int first, int second)
 int calculator(int first, int second, calcFuncPtr func)
 {
 	return func(first, second);
-}*/
+}
