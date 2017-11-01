@@ -8,10 +8,14 @@ struct Ractangle
 	int width, height;
 };
 
-int main() 
+int main()
 {
-	Ractangle rc = { 100, 100, 50, 50 };
+	Ractangle rc;
 	Ractangle *rcp = &rc;
+	Ractangle rc1[2] = { {150,150,100,100},{250,250,150,150} };
+	Ractangle *rc1p = rc1;
+
+	rc = { 100, 100, 50, 50 };
 
 	cout << "original Ractangle struct value" << endl;
 	cout << rc.x << "  " << rc.y << "  " << rc.width << "  " << rc.height << endl;
@@ -25,4 +29,13 @@ int main()
 	cout << "second changed Ractangle struct value" << endl;
 	cout << rc.x << "  " << rc.y << "  " << rc.width << "  " << rc.height << endl;
 
+	cout << "Contact Array Ractangle struct value" << endl;
+	cout << rc1[0].height << endl;
+
+	cout << "Contact Array Ractangle struct value By pointer" << endl;
+	cout << &rc1[0] << endl;
+	cout << (rc1+1) -> height << endl;
+	cout << (rc1p + 1)->height << endl;
+
+	return 0;
 }

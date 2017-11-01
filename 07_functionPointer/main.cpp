@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 using namespace std;
@@ -38,8 +38,8 @@ int main()
 		break;
 	}
 
-	result = calculator(a, b, calc);
-
+	//result = calculator(a, b, calc);
+	result = calc(a, b);
 	printf("result: %d", result);
 	return 0;
 }
@@ -66,4 +66,4 @@ int division(int first, int second)
 int calculator(int first, int second, calcFuncPtr func)
 {
 	return func(first, second);
-}
+}*/

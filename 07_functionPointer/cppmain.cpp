@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -48,4 +48,4 @@ int main()
 
 	pt.print();
 	return 0;
-}*/
+}

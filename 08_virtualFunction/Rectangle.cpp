@@ -1,10 +1,10 @@
 #include "Rectangle.h"
 
-/*void Rectangle::draw() const
+void Rectangle::draw() const
 {
 	cout << "[Ractangle] position x = " << _x << " y = " << _y
 		<< " size width = " << _width << " height = " << _height << endl;
-}*/
+}
 
 void Rectangle::resize(double width, double height)
 {
